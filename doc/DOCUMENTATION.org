@@ -2546,6 +2546,8 @@ with your GUI Emacs, e.g.:
 export EDITOR="/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c"
 #+end_src
 
+If you've installed `emacs-mac` via `homebrew`, `emacsclient` will be in `/usr/local/bin`. Note that the mac port of Emacs currently does not support MultiTTY and as such, `emacsclient -t` will not work as expected.
+
 Tip: Remember to use ~:wq~ or ~C-x #~ after you are done editing the file in
 Emacs.
 
